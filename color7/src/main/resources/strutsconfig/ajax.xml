@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 必须继承json-default，可参阅struts2-json-plugin.jar包中struts-plugin.xml配置文件 -->
+	<package name="ajax" extends="json-default" namespace="/ajax">
+		<action name="ajax_*" class="com.color.action.AjaxAction"
+			method="{1}">
+			<result type="json">
+				<!-- 此处将jsonResult的值返回给客户端，root的值对应要返回的值的属性jsonResult 注意：root为固定写法，否则不会把jsonResult的值返回给客户端 -->
+				<param name="root">jsonResult</param>
+			</result>
+		</action>
+	</package>
+
+</struts>

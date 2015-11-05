@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="hello" extends="common" namespace="/hello">
+		<action name="hello_*" class="com.color.action.HelloAction"
+			method="{1}">
+			<!-- 像这样调用 -->
+			<!-- http://localhost:8080/ssh/fuck/fuck_mother.action -->
+			<result name="world">/world.jsp</result>
+		</action>
+	</package>
+
+</struts>
