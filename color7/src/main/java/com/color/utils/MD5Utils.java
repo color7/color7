@@ -1,8 +1,8 @@
-package com.color.util;
+package com.color.utils;
 
 import java.security.NoSuchAlgorithmException;
 
-public class MD5 {
+public class MD5Utils {
 
     private static final String COMPANENAME = "www.color7.com";
 

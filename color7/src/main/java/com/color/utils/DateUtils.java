@@ -1,4 +1,4 @@
-package com.color.util;
+package com.color.utils;
 
 import java.util.Date;
 import java.text.ParseException;
