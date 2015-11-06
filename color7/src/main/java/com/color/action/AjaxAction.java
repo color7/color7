@@ -1,5 +1,10 @@
 package com.color.action;
 
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import com.alibaba.fastjson.JSONObject;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -9,6 +14,7 @@ public class AjaxAction extends ActionSupport {
 	 */
 	private static final long serialVersionUID = 1L;
 	private String jsonResult;
+	private HttpServletResponse response;
 
 	public String ajax() {
 		JSONObject jsonObject = new JSONObject();
@@ -17,7 +23,9 @@ public class AjaxAction extends ActionSupport {
 		return SUCCESS;
 	}
 
+
 	public String simple() {
+		System.out.println("---------simple----------");
 		return "simple";
 	}
 
